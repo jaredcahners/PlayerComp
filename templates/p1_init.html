@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+
+ <main class="px-3"><form class="row g-3" action = "/p1_choice" method = 'POST'>
+  <h1>Player Comparison Tool</h1>
+    <p class="lead">First we choose player 1. Please enter the full name of the player you are looking for or part of that player's name. Then enter the player's division.</p>
+  
+  <div class="col-7">
+    <input class="form-control" name="p1_name_try" placeholder = "player name or part thereof" value = "{{ p1_namepart }}">
+
+</div>
+
+
+<div class="col-auto">
+  <select class="form-select" aria-label="Default select example" name = "division">
+  <option selected>Division</option>
+  <option value="FPO">FPO</option>
+  <option value="MPO">MPO</option>
+</select>
+</div>
+  <div class="col-auto">
+    <button type="submit" class="btn btn-primary mb-3">Done!</button>
+  </div>
+</form>
+  {% if error_message %}
+
+<div class="alert alert-warning" role="alert">
+  {{ error_message }}
+</div>
+
+  {% endif %}
+
+
+</main>
+
+  {% endblock %}

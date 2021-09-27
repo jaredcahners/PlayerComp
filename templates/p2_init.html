@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+
+ <main class="px-3"><form class="row g-3" action = "/p2_choice" method = 'POST'>
+  <h1>Player Comparison Tool</h1>
+    <p class="lead">You chose {% for result in results1 %}{%if result[4]|int == player1|int%}{{result[1]}}{%endif%}{%endfor%} as player 1. Now choose player 2. Please enter the full name of the player you are looking for or part of that player's name.</p>
+  
+  <div class="col-7">
+    <input class="form-control" name="p2_name_try" placeholder = "player name or part thereof" value = "{{ p2_namepart }}">
+
+</div>
+
+
+<div class="col-auto">
+  <select class="form-select" aria-label="Default select example" name = "division">
+  <option selected>{{ division }}</option>
+
+</select>
+</div>
+  <div class="col-auto">
+    <button type="submit" class="btn btn-primary mb-3">Done!</button>
+  </div>
+</form>
+  {% if error_message %}
+
+<div class="alert alert-warning" role="alert">
+  {{ error_message }}
+</div>
+
+  {% endif %}
+
+
+</main>
+
+  {% endblock %}

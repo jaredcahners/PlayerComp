@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+
+ <main class="px-3">
+    <h1>Player Comparison Tool</h1>
+    <br />
+    <p class="lead">Please click your choice for player 2!</p>
+    <br />
+    {% for result in results2 %}
+
+    <p class="lead"><a href="{{url_for('analysis', player2 = result[4])}}">{{ result[1] }} (PDGA# {{ result[3] }})</a></p>
+
+    {% endfor %}
+
+  </main>
+
+  {% endblock %}
