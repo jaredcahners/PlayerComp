@@ -8,8 +8,12 @@ players = []
 
 @app.route('/')
 def index():
-  players.clear()
   return render_template('index.html')
+
+@app.route('/playercomp')
+def playercomp():
+  players.clear()
+  return render_template('playercomp.html')
 
 @app.route('/about')
 def about():
