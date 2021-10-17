@@ -1,9 +1,11 @@
 from flask import Flask, render_template, request, redirect
 from player_search import check_name
 from evaluate import evaluate
+import pandas as pd
 
 app = Flask(__name__)
 
+ped = pd.read_csv('static/players_events_17102021.csv')
 players = []
 
 @app.route('/')
@@ -38,7 +40,7 @@ def p1_choice():
     return render_template('p1_init.html', error_message = error_message, p1_namepart=p1_namepart)
 
   global results1
-  results1 = check_name(p1_namepart, division)
+  results1 = check_name(p1_namepart, division, ped)
 
   if len(results1) == 0:
     error_message = "We couldn't find anyone by that name. Please try again."
@@ -64,7 +66,7 @@ def p2_choice():
     return render_template('p2_init.html', error_message = error_message, p2_namepart=p2_namepart)
 
   global results2
-  results2 = check_name(p2_namepart, division)
+  results2 = check_name(p2_namepart, division, ped)
 
   if len(results2) == 0:
     error_message = "We couldn't find anyone by that name. Please try again."
@@ -103,9 +105,19 @@ def analysis():
   tourneys = request.form.get('tourneys')
   years = request.form.get('years')
 
-  final_results = evaluate(players, tourneys, years)
+  final_results = evaluate(players, tourneys, years, ped)
   
   return render_template('analysis.html', player_1_name=player_1_name, player_2_name=player_2_name, final_results=final_results)
+
+@app.route('/metrics', methods = ["GET", "POST"])
+def metrics():
+  metric_type = None
+  metric_division = None
+  if request.method == 'POST':
+    metric_type = request.form.get('metric')
+    metric_division = request.form.get('division')
+  
+  return render_template('metrics.html', metric_type = metric_type, metric_division = metric_division)
 
 
 if __name__ == '__main__':

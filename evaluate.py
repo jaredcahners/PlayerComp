@@ -1,15 +1,13 @@
 import csv
 import pandas as pd
 
-def evaluate(players, tourneys, years):
+def evaluate(players, tourneys, years, ped):
     tdict = {}
     with open('static/tournaments.csv', 'r') as csvfile:
         for row in csv.reader(csvfile):
             tdict[row[0]] = (row[1], row[3])
             
     results = []
-    
-    ped = pd.read_csv('static/players_events_17102021.csv')
     
     players = [int(i) for i in players]
     

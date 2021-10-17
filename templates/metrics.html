@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+
+ <main class="px-3">
+  <h1>Metrics</h1>
+    <p class="lead">Here you can take a look at some disc golf metrics I have been working on. More metrics and more functionality will be added when I have time.</p>
+    <p>Are you interested in power rankings? Threat indexes? Big Comp results?</p>
+    
+<form class="row g-3" action = "/metrics" method = 'POST'>
+
+<div class="col-6">
+  <select class="form-select" aria-label="Default select example" name = "metric">
+  <option value="Power" selected>Power Ranking</option>
+  <option value="Threat">Threat Index</option>
+  <option value="Big">Big Comp Results</option>
+</select>
+</div>
+
+<div class="col-4">
+  <select class="form-select" aria-label="Default select example" name = "division">
+  <option value="FPO" selected>FPO</option>
+  <option value="MPO">MPO</option>
+</select>
+</div>
+  <div class="col-auto">
+    <button type="submit" class="btn btn-primary mb-3">Done!</button>
+  </div>
+</form>
+  {% if metric_division %}
+
+<p class="lead">Metric division is {{ metric_division }}. Metric is {{ metric_type }}.</p>
+  
+
+  {% endif %}
+
+
+</main>
+
+  {% endblock %}
