@@ -9,7 +9,7 @@ def evaluate(players, tourneys, years):
             
     results = []
     
-    ped = pd.read_csv('static/ped_small.csv')
+    ped = pd.read_csv('static/players_events_17102021.csv')
     
     players = [int(i) for i in players]
     

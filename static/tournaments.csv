@@ -1,3 +1,9 @@
+Turku2020,Prodigy - Turku,28,2020,A,Turku2020,46093,-24,0,100
+Silver2020,Silver Cup 2020,28,2020,A,Silver2020,43971,-31,1,129
+Lang2020,Seviren Lang Memorial 2020,29,2020,A,Lang2020,43578,-32,12,50
+Tampere2020,Prodigy - Tampere 2020,30,2020,A,Tampere2020,46173,-16,15,103
+GLO2020,Great Lakes Open 2020,30,2020,NT,GLO2020,44224,-33,-16,1000
+Alut2020,Alutaguse Open 2020,30,2020,A,Alut2020,43716,-23,-4,77
 Kuopio2020,Prodigy - Kuopio 2020,31,2020,A,Kuopio2020,46094,-39,-13,80
 MAO2020,Mid America Open 2020,31,2020,A,MAO2020,43740,-19,7,1000
 Lake2020,Lake Superior Open 2020,31,2020,A,Lake2020,43446,-28,-3,79
@@ -6,6 +12,7 @@ Ponca2020,Ponca City Open 2020,31,2020,A,Ponca2020,43387,-23,nan,34
 Idlewild2020,Idlewild Open 2020,32,2020,NT,Idlewild2020,43983,-27,8,1000
 Cedar2020,Cedar Creek Open 2020,32,2020,A,Cedar2020,43575,-32,45,53
 Norm2020,Norman Pro-Am 2020,32,2020,A/B,Norm2020,43444,-19,29,32
+Finnish2020,Finnish Nationals 2020,32,2020,A,Finnish2020,45904,-32,9,1000
 Ledge2020,Ledgestone Insurance Open 2020,33,2020,NT,Ledge2020,43452,-35,-24,1000
 Swede2020,Swedish Championships 2020,33,2020,A,Swede2020,45576,-49,15,84
 GHO2020,Greater Hartford Open 2020,34,2020,A,GHO2020,43380,-20,33,48
@@ -32,6 +39,7 @@ TexasSt2020,Texas States 2020,40,2020,A,TexasSt2020,43763,-22,-5,94
 BigRip2020,Big Rip Classic 2020,40,2020,A,BigRip2020,43450,-24,7,34
 Aspen2020,Aspen Treebash Open 2020,41,2020,A,Aspen2020,44273,-18,6,48
 WomenNC2020,Women's National Championship 2020,41,2020,Major,WomenNC2020,46345,nan,-21,1000
+USDGC2020,US Disc Golf Championship 2020,41,2020,Major,USDGC2020,43838,-30,nan,1000
 DGPTChamp2020,DGPT Tour Championship 2020,42,2020,NT,DGPTChamp2020,44743,nan,nan,1000
 WOGD2020,Weapons of Grass Destruction 2020,42,2020,A,WOGD2020,43381,-22,62,33
 NorCal2020,Norcal Series Championship 2020,42,2020,A,NorCal2020,43847,-24,-10,42
@@ -114,6 +122,7 @@ Ledge,Ledgestone Insurance Open,31,2021,NT,Ledge,47981,-17,-19,1000
 Portneuf,Portneuf Valley Open,31,2021,A,Portneuf,49531,-32,33,37
 Firefly,Firefly Hollow,31,2021,A,Firefly,48629,-18,nan,37
 Idle,Idlewild Open,32,2021,NT,Idle,48688,-25,-1,1000
+EDGF,European Disc Golf Championship,32,2021,A,EDGF,50171,-43,-11,1000
 Maine,Maine State Championship,33,2021,A,Maine,52756,-20,23,50
 Stafford,Stafford Open,33,2021,A,Stafford,47835,-37,-6,100
 Mayhem,Mayhem Open,33,2021,A,Mayhem,47829,-24,nan,51
@@ -121,6 +130,7 @@ Lund,Nationella Touren #3 Lund,33,2021,A/B,Lund,49499,-19,9,70
 Brent,Brent Hambrick Memorial Open,33,2021,A,Brent,49003,-35,0,42
 Ontario,Ontario Disc Golf Championship,33,2021,A,Ontario,48157,-49,8,54
 Cedar,Cedar Creek Open,33,2021,A,Cedar,48125,-29,8,56
+Finnish,Finnish Nationals,33,2021,A,Finnish,49601,-37,-9,1000
 Sweden,Swedish Championships,34,2021,A,Sweden,50138,-33,36,1000
 Del,Delaware Challenge,34,2021,NT,Del,47520,-22,-14,1000
 Ponca,Ponca City Open,34,2021,A,Ponca,48160,-20,-1,44
@@ -130,7 +140,28 @@ Toronto,Toronto Island Maple Leaf,35,2021,A/C,Toronto,53548,-23,15,31
 Falcons,Falcons Flight,35,2021,A,Falcons,52921,-14,21,70
 Trail,End of the Trail,35,2021,A/B,Trail,49909,-31,2,56
 Chiro,Midtown Chiropractic Championship,35,2021,B/A,Chiro,47841,-33,nan,28
+Grass,Weapons of Grass Destruction,35,2021,A,Grass,48482,-19,15,43
+Heinola,Prodigy - Heinola,35,2021,A,Heinola,53794,-18,10,101
 Green,Green Mountain Championship,36,2021,NT,Green,48690,-41,-7,1000
 SEI,Southeast Idaho Inv,36,2021,A,SEI,49007,-32,nan,19
 Nokia,Nokia Open,37,2021,A,Nokia,49152,-18,32,60
 Pitt,Pittsburgh Open,37,2021,A,Pitt,48670,-31,-10,69
+Foxwood,Foxwood Open,37,2021,A,Foxwood,48209,-42,9,33
+Safari,San Francisco Safari,37,2021,A,Safari,48170,-25,-3,39
+Michigan,Michigan State Championships,37,2021,A,Michigan,48126,-31,8,66
+Hartford,Greater Hartford Open,37,2021,A,Hartford,48030,-29,19,50
+SLO,St. Louis Open,37,2021,A,SLO,47875,-26,8,87
+Match,DGPT Match Play Championship,37,2021,A,Match,50463,nan,nan,1000
+Music,Music City Open,38,2021,NT,Music,47541,-32,-15,1000
+Superior,Lake Superior Open,38,2021,A,Superior,48965,-28,25,90
+Hollows,Hollows Fall Classic,38,2021,A,Hollows,47824,-13,17,49
+Falko,Nationella Touren 4 Falköping,38,2021,A,Falko,50131,-23,8,62
+Kentucky,Kentuckt State Championships,39,2021,A,Kentucky,51760,-32,20,24
+Piney,Piney Woods Open,39,2021,A,Piney,51632,-20,17,70
+BigRip,Big Rip Classic,39,2021,A,BigRip,47867,-32,5,38
+FourStates,Four States Open,39,2021,A/B,FourStates,48924,-20,11,39
+Oakland,Oakland County Championship,39,2021,B/A,Oakland,48179,-33,-1,32
+Seth,Seth Burton Memorial,39,2021,A/B,Seth,47889,-26,7,27
+Clash,Carolina Clash,39,2021,A,Clash,47893,-23,-4,97
+Pink,Throw Pink,40,2021,A,Pink,50023,nan,-2,1000
+USDGC,US Disc Golf Championship,40,2021,Major,USDGC,47518,-26,nan,1000

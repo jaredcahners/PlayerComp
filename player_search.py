@@ -1,7 +1,7 @@
 import pandas as pd
 import re
 
-ped = pd.read_csv('static/ped_small.csv')
+ped = pd.read_csv('static/players_events_17102021.csv')
 
 def check_name(namepart, division_in):
     '''
