@@ -2,6 +2,7 @@ from flask import Flask, render_template, request, redirect
 from player_search import check_name
 from evaluate import evaluate
 import pandas as pd
+from metrics import power_rankings
 
 app = Flask(__name__)
 
@@ -111,13 +112,17 @@ def analysis():
 
 @app.route('/metrics', methods = ["GET", "POST"])
 def metrics():
+  power_tups = None
   metric_type = None
   metric_division = None
   if request.method == 'POST':
     metric_type = request.form.get('metric')
     metric_division = request.form.get('division')
+    if metric_type == 'Power':
+      power_tups = power_rankings(metric_division, ped)
+    
   
-  return render_template('metrics.html', metric_type = metric_type, metric_division = metric_division)
+  return render_template('metrics.html', metric_type = metric_type, metric_division = metric_division, power_tups = power_tups)
 
 
 if __name__ == '__main__':

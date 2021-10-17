@@ -30,8 +30,15 @@
 </form>
   {% if metric_division %}
 
+  {% if power_tups %}
+
+  {{power_tups}}
+
+  {% else %}
+
 <p class="lead">Metric division is {{ metric_division }}. Metric is {{ metric_type }}.</p>
   
+  {% endif %}
 
   {% endif %}
 
