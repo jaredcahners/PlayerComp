@@ -78,7 +78,8 @@ def p2_choice():
 
 @app.route('/options/<player2>')
 def options(player2):
-  players.append(player2)
+  if player2 != 'nope':
+    players.append(player2)
   for result in results1:
     if int(result[4]) == int(players[0]):
       player_1_name = result[1]
