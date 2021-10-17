@@ -23,7 +23,19 @@
 
 {% endfor %}
 
+<br /><br />
 
+<main class="px-3">
+  
+  <div class="col-auto">
+   <a href = "{{ url_for('options', player2 = 'nope') }}"><button type="button" class="btn btn-primary mb-3">Change options</button></a>
+</div>
+
+<div class="col-auto">
+   <a href = "{{ url_for('playercomp') }}"><button type="button" class="btn btn-primary mb-3">Start over</button></a>
+</div>
+
+ 
 
 
   </main>

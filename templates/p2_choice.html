@@ -10,7 +10,7 @@
     <br />
     {% for result in results2 %}
 
-    <p class="lead"><a href="{{url_for('analysis', player2 = result[4])}}">{{ result[1] }} (PDGA# {{ result[3] }})</a></p>
+    <p class="lead"><a href="{{url_for('options', player2 = result[4])}}">{{ result[1] }} (PDGA# {{ result[3] }})</a></p>
 
     {% endfor %}
 
