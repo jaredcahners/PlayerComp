@@ -75,9 +75,9 @@ def p2_choice():
     return render_template('p2_init.html', error_message = error_message, p2_namepart=p2_namepart)
 
   return render_template('p2_choice.html', results2 = results2)
-  
-@app.route('/analysis/<player2>')
-def analysis(player2):
+
+@app.route('/options/<player2>')
+def options(player2):
   players.append(player2)
   for result in results1:
     if int(result[4]) == int(players[0]):
@@ -85,7 +85,24 @@ def analysis(player2):
   for result in results2:
     if int(result[4]) == int(players[1]):
       player_2_name = result[1]
-  final_results = evaluate(players)
+
+  return render_template('options.html', player_1_name = player_1_name, player_2_name = player_2_name)
+
+
+
+@app.route('/analysis', methods = ["POST"])
+def analysis():
+  for result in results1:
+    if int(result[4]) == int(players[0]):
+      player_1_name = result[1]
+  for result in results2:
+    if int(result[4]) == int(players[1]):
+      player_2_name = result[1]
+
+  tourneys = request.form.get('tourneys')
+  years = request.form.get('years')
+
+  final_results = evaluate(players, tourneys, years)
   
   return render_template('analysis.html', player_1_name=player_1_name, player_2_name=player_2_name, final_results=final_results)
 
