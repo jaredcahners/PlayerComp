@@ -4,11 +4,12 @@
 {% block content %}
 
  <main class="px-3">
+  <br /><br />
   <h1>Metrics</h1>
     <p class="lead">Here you can take a look at some disc golf metrics I have been working on. More metrics and more functionality will be added when I have time.</p>
     <p>Are you interested in power rankings? Threat indexes? Big Comp results?</p>
     
-<form class="row g-3" action = "/metrics" method = 'POST'>
+<form class="row g-3" action = "/metrics" method = 'POST' style = "border-bottom-style : solid; border-bottom-color : white">
 
 <div class="col-6">
   <select class="form-select" aria-label="Default select example" name = "metric">
@@ -31,12 +32,29 @@
   {% if metric_division %}
 
   {% if power_tups %}
+  <br />
+  <h2>Power Rankings ({{ metric_division }})</h2>
+  <div class="row" style = "border-bottom-style : solid; border-bottom-color : white">
+  <div class="col-2">Rank</div>
+  <div class="col-4">Name</div>
+  <div class="col-3">Events Played</div>
+  <div class="col-3">Power Points</div>
+ </div>
 
-  {{power_tups}}
+  {% for tup in power_tups %}
+
+<div class="row" style = "border-bottom-style : solid; border-bottom-color : white">
+  <div class="col-2">{{ tup[0] }}</div>
+  <div class="col-4">{{ tup[1] }}</div>
+  <div class="col-3">{{ tup[2] }}</div>
+  <div class="col-3">{{ "%.2f"|format(tup[3]) }}</div>
+ </div>
+
+{% endfor %}
 
   {% else %}
 
-<p class="lead">Metric division is {{ metric_division }}. Metric is {{ metric_type }}.</p>
+<p class="lead">Coming Soon</p>
   
   {% endif %}
 
