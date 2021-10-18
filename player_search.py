@@ -1,9 +1,7 @@
 import pandas as pd
 import re
 
-ped = pd.read_csv('static/players_events_17102021.csv')
-
-def check_name(namepart, division_in):
+def check_name(namepart, division_in, ped):
     '''
     Given a possible name or part of a name, returns a list of tuples for possible matches.
     '''
